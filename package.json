@@ -1,0 +1,40 @@
+{
+	"name": "daydaycompliment",
+	"displayName": "daydaycompliment",
+	"description": "just for fun",
+	"version": "0.0.1",
+	"publisher": "qin9smile",
+	"repository": "https://github.com/qin9smile/daydaycompliment",
+	"engines": {
+		"vscode": "^1.34.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.dayDayCompliment"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.dayDayCompliment",
+				"title": "Day Day Compliment"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^12.12.0",
+		"@types/vscode": "^1.34.0",
+		"@typescript-eslint/eslint-plugin": "^5.19.0",
+		"@typescript-eslint/parser": "^5.19.0",
+		"eslint": "^8.13.0",
+		"typescript": "^4.6.3"
+	}
+}
